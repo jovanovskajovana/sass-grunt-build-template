@@ -1,10 +1,13 @@
 {
   "name": "sass-plus-grunt-build-template",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Basic Sass architecture and Grunt build template",
   "author": "Jovana Jovanovska",
   "license": "ISC",
-  "scripts": {},
+  "scripts": {
+    "start": "grunt",
+    "build": "grunt build"
+  },
   "devDependencies": {
     "grunt": "^1.2.1",
     "grunt-contrib-connect": "^3.0.0",
