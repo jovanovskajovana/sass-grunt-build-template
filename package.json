@@ -2,19 +2,16 @@
   "name": "sass-plus-grunt-build-template",
   "version": "1.0.0",
   "description": "Basic Sass architecture and Grunt build template",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Jovana Jovanovska",
   "license": "ISC",
-  "homepage": "https://github.com/jovanovskajovana/sass-plus-grunt-build-template#readme",
+  "scripts": {},
   "devDependencies": {
-    "grunt": "^1.0.3",
-    "grunt-contrib-connect": "^1.0.2",
+    "grunt": "^1.2.1",
+    "grunt-contrib-connect": "^3.0.0",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-uglify": "^5.0.0",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-sass": "^2.1.0"
+    "grunt-sass": "^3.1.0",
+    "node-sass": "^4.14.1"
   }
 }

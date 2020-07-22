@@ -1,3 +1,5 @@
+const sass = require('node-sass');
+
 module.exports = function(grunt) {
 
   grunt.initConfig({
@@ -45,6 +47,7 @@ module.exports = function(grunt) {
     sass: {
       dev: {
         options: {
+          implementation: sass,
           outputStyle: 'expanded'
         },
         files: [{
@@ -57,6 +60,7 @@ module.exports = function(grunt) {
       },
       build: {
         options: {
+          implementation: sass,
           outputStyle: 'compressed'
         },
         files: [{
