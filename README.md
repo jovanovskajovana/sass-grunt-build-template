@@ -2,7 +2,9 @@
 
 Here is a [Grunt](https://gruntjs.com/) setup that will save you countless hours of trying to get the bundling up and running.
 
-## Quick Start
+<img src='./src/img/logo-grunt-sass.png' width='170'>
+
+## 🚀 Quick Start
 
 This quick start is intended to guide you through installing all the dependencies and understanding the basic file architecture.
 
@@ -86,9 +88,9 @@ npm install grunt-contrib-connect --save-dev
 ```
 > Runs a web server for local development.
 
-## Sass architecture
+## 🎨 Sass architecture
 
-To keep stylesheets short, efficient, and easier to maintain, build the interface as a collection of (components)[./scss/]. Split the code in separate folders, such as `base/`, `components/`, `layout/`, `pages/`, and a single file at the root level, called `main.scss`, which imports them all to be compiled into a CSS stylesheet.
+To keep stylesheets short, efficient and easier to maintain, build the interface as a collection of [components](./src/scss). Split the code in separate folders, such as `base/`, `components/`, `layout/`, `pages/`, and a single file at the root level, called `main.scss`, which imports them all to be compiled into a CSS stylesheet.
 
 When working on smaller projects, you can keep all reusable partials into `common/` folder and collect the page related styles into `pages/`.
 
@@ -118,9 +120,9 @@ sass/
     `– main.scss                # Main Sass file
 ```
 
-## Start developing
+## 🎉 Start developing
 
-The (Gruntfile.js)[./gruntfile.js] includes **build** and **dev** configuration. Build will compress JavaScript and CSS files into a production-ready directory, and dev is the default development mode.
+The [Gruntfile.js](./src/gruntfile.js) includes **build** and **dev** configuration. Build will compress JavaScript and CSS files into a production-ready directory, and dev is the default development mode.
 
 ```
 npm install
@@ -130,12 +132,12 @@ npm install
 ```
 npm run dev
 ```
-> To continue local development, visit http://localhost:8000.
+> Continue local development and visit http://localhost:8000.
 
 ```
 npm run build
 ```
-> Then build all files for production.
+> And then build all files for production.
 
 
 
