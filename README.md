@@ -67,7 +67,7 @@ npm install grunt-contrib-watch --save-dev
 > Triggers the watch task to reload Gruntfile.js changes each time a watched file is modified.
 
 ```
-npm install --save-dev node-sass grunt-sass
+npm install node-sass grunt-sass --save-dev
 ```
 > Compiles Sass code to minified CSS files.
 
@@ -85,6 +85,58 @@ npm install grunt-contrib-copy --save-dev
 npm install grunt-contrib-connect --save-dev
 ```
 > Runs a web server for local development.
+
+## Sass architecture
+
+To keep stylesheets short, efficient, and easier to maintain, build the interface as a collection of (components)[./scss/]. Split the code in separate folders, such as `base/`, `components/`, `layout/`, `pages/`, and a single file at the root level, called `main.scss`, which imports them all to be compiled into a CSS stylesheet.
+
+When working on smaller projects, you can keep all reusable partials into `common/` folder and collect the page related styles into `pages/`.
+
+```
+sass/
+    |
+    |– common/
+    |   |– _base.scss           # Global html rules
+    |   |– _buttons.scss        # Buttons
+    |   |– _footer.scss         # Footer
+    |   |– _forms.scss          # Form components
+    |   |– _header.scss         # Header
+    |   |– _layout.scss         # Basic layouts
+    |   |– _links.scss          # Links
+    |   |– _margins.scss        # Spacing helpers
+    |   |– _modal.scss          # Modals
+    |   |– _tooltip.scss        # Tooltip
+    |   |– _typography.scss     # Typography rules
+    |   |– _variables.scss      # Sass Variables
+    |
+    |– pages/
+    |   |– _contact.scss        # Contact page specific styles
+    |   |– _home.scss           # Home page specific styles
+    |   |– _news.scss           # News page specific styles
+    |
+    |
+    `– main.scss                # Main Sass file
+```
+
+## Start developing
+
+The (Gruntfile.js)[./gruntfile.js] includes **build** and **dev** configuration. Build will compress JavaScript and CSS files into a production-ready directory, and dev is the default development mode.
+
+```
+npm install
+```
+> Clone this repository and install all dependencies.
+
+```
+npm run dev
+```
+> To continue local development, visit http://localhost:8000.
+
+```
+npm run build
+```
+> Then build all files for production.
+
 
 
 

@@ -5,7 +5,7 @@
   "author": "Jovana Jovanovska",
   "license": "ISC",
   "scripts": {
-    "start": "grunt",
+    "dev": "grunt",
     "build": "grunt build"
   },
   "devDependencies": {
