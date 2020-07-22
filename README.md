@@ -4,14 +4,13 @@ Here is a [Grunt](https://gruntjs.com/) setup that will save you countless hours
 
 ## Quick Start
 
-This quick start will guide you through installing all the dependencies and understanding the basic file architecture.
+This quick start is intended to guide you through installing all the dependencies and understanding the basic file architecture.
 
 ### Install the Grunt CLI
 
 ```
 
 npm install -g grunt-cli
-
 ```
 
 > Make sure you have a stable version of [Node.js](https://nodejs.org/en/) and install Grunt CLI globally on your machine.
