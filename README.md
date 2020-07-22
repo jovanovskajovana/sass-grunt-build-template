@@ -20,16 +20,16 @@ npm install -g grunt-cli
 npm install grunt --save-dev
 ```
 
-> Navigate to your project and add grunt to the devDependencies list.
+> Navigate to the project directory and add grunt to the devDependitions list.
 
 #### Setup the Gruntfile.js
 
 ```
 module.exports = function(grunt) {
 
-	// Configure task(s)
-	grunt.initConfig({
-		pkg: grunt.file.readJSON('package.json'),
+  // Configure task(s)
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
     uglify: {
       dev: {
         options: {
@@ -45,13 +45,13 @@ module.exports = function(grunt) {
         }]
       }
     },
-	});
+  });
 
-	// Load the plugins
-	grunt.loadNpmTasks('grunt-contrib-uglify');
+  // Load the plugins
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
-	// Register task(s)
-	grunt.registerTask('default', ['uglify:dev']);
+  // Register task(s)
+  grunt.registerTask('default', ['uglify:dev']);
   grunt.registerTask('build', ['uglify:build']);
 
 };
@@ -64,7 +64,7 @@ module.exports = function(grunt) {
 ```
 npm install grunt-contrib-watch --save-dev
 ```
-> Triggers the watch task to reload Gruntfile.js changes each time a watched file is midified.
+> Triggers the watch task to reload Gruntfile.js changes each time a watched file is modified.
 
 ```
 npm install --save-dev node-sass grunt-sass
