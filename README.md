@@ -2,7 +2,7 @@
 
 Here is a [Grunt](https://gruntjs.com/) setup that will save you countless hours of trying to get the bundling up and running.
 
-<img src='./src/img/logo-grunt-sass.png' width='170'>
+<img src='./src/img/logo-grunt-sass.png' width='270'>   
 
 ## 🚀 Quick Start
 
@@ -86,7 +86,7 @@ npm install grunt-contrib-copy --save-dev
 ```
 npm install grunt-contrib-connect --save-dev
 ```
-> Runs a web server for local development.
+> Runs a web server for local development.   
 
 ## 🎨 Sass architecture
 
@@ -118,7 +118,7 @@ sass/
     |
     |
     `– main.scss                # Main Sass file
-```
+```   
 
 ## 🎉 Start developing
 
