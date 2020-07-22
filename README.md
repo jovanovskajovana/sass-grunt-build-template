@@ -8,11 +8,11 @@ This quick start will guide you through installing all the dependencies and unde
 
 ### Install the Grunt CLI
 
-``
+```
 
 npm install -g grunt-cli
 
-``
+```
 
 > Make sure you have a stable version of [Node.js](https://nodejs.org/en/) and install Grunt CLI globally on your machine.
 
