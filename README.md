@@ -2,7 +2,7 @@
 
 Here is a [Grunt](https://gruntjs.com/) setup that will save you countless hours of trying to get the bundling up and running.
 
-<img src='./src/img/logo-grunt-sass.png' width='270'>
+<img src='./src/img/logo-grunt-sass.png' width='370'>
 <br/>
 
 ## 🚀 Quick Start
