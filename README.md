@@ -23,7 +23,7 @@ npm install -g grunt-cli
 npm install grunt --save-dev
 ```
 
-> Navigate to the project directory and add grunt to the devDependitions list.
+> Navigate to the project directory and add Grunt to the devDependencies list.
 
 #### Setup the Gruntfile.js
 
@@ -60,7 +60,7 @@ module.exports = function(grunt) {
 };
 ```
 
-> First you need to configure all the tasks you will be using for automation, load the plugins and then register the tasks for development or production. Keep the process simple by including only key tasks such as [watch](https://www.npmjs.com/package/grunt-contrib-watch), [sass](https://www.npmjs.com/package/grunt-sass), [uglify](https://www.npmjs.com/package/grunt-contrib-uglify), [copy](https://www.npmjs.com/package/grunt-contrib-copy) and [connect](https://www.npmjs.com/package/grunt-contrib-connect).
+> First you need to configure all the tasks you will be using for automation, load the plugins, and then register the tasks for development or production. Keep the process simple by including only key tasks such as [watch](https://www.npmjs.com/package/grunt-contrib-watch), [sass](https://www.npmjs.com/package/grunt-sass), [uglify](https://www.npmjs.com/package/grunt-contrib-uglify), [copy](https://www.npmjs.com/package/grunt-contrib-copy) and [connect](https://www.npmjs.com/package/grunt-contrib-connect).
 
 #### Install Gruntplugins
 
@@ -92,7 +92,7 @@ npm install grunt-contrib-connect --save-dev
 
 ## 🎨 Sass architecture
 
-To keep stylesheets short, efficient and easier to maintain, build the interface as a collection of [components](./src/scss). Split the code in separate folders, such as `base/`, `components/`, `layout/`, `pages/`, and a single file at the root level, called `main.scss`, which imports them all to be compiled into a CSS stylesheet.
+To keep stylesheets short, efficient and easier to maintain, build the interface as a collection of [components](./src/scss). Split the code in separate folders such as `base/`, `components/`, `layout/`, `pages/`, and a single file at the root level, called `main.scss`, which imports them all to be compiled into a CSS stylesheet.
 
 When working on smaller projects, you can keep all reusable partials into `common/` folder and collect the page related styles into `pages/`.
 
@@ -125,7 +125,7 @@ sass/
 
 ## 🎉 Start developing
 
-The [Gruntfile.js](./src/gruntfile.js) includes **build** and **dev** configuration. Build will compress JavaScript and CSS files into a production-ready directory, and dev is the default development mode.
+The [Gruntfile.js](./gruntfile.js) includes **build** and **dev** configuration. Build will compress JavaScript and CSS files into a production-ready directory, and dev is the default development mode.
 
 ```
 npm install
@@ -140,7 +140,7 @@ npm run dev
 ```
 npm run build
 ```
-> And then build all files for production.
+> And, build all files for production.
 
 
 
